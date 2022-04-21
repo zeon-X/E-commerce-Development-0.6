@@ -23,10 +23,10 @@ const setToLS = (product) => {
 
 
 //DELETS FORM LOCAL-STORAGE
-const deleteFormLS = (product) => {
+const deleteFormLS = (id) => {
     let fetchedData = getFromLS();
 
-    delete fetchedData[product];
+    delete fetchedData[id];
 
     const data = JSON.stringify(fetchedData);
     localStorage.setItem('cart-info', data);

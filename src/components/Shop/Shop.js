@@ -3,13 +3,15 @@ import Product from './Product/Product';
 import './Shop.css'
 import useProduct from '../../CustomHooks/useProduct'
 import useCart from '../../CustomHooks/useCart'
-import { setToLS } from '../../Utilities/localStorage';
+import { deleteLS, setToLS } from '../../Utilities/localStorage';
 import useCalculatePayment from '../../CustomHooks/useCalclatePayment';
+import { useNavigate } from 'react-router-dom';
 
 const Shop = () => {
     const [product, setProduct] = useProduct();
     const [cart, setCart] = useCart(product);
     const [calculatePayment, setCalculatePayment] = useCalculatePayment(cart);
+    const navigate = useNavigate();
 
     const addToCart = (data) => {
         setToLS(data.id);
@@ -28,6 +30,12 @@ const Shop = () => {
         }
 
         setCart(temCart);
+    }
+
+
+    const clearCart=()=>{
+        deleteLS();
+        setCart([]);
     }
 
     // console.log(calculatePayment);
@@ -56,8 +64,8 @@ const Shop = () => {
                     <p>Tax: ${calculatePayment.tax}</p>
                     <h3 className='mb-10'>Grand Total: ${calculatePayment.grandTotal}</h3>
 
-                    <button className='clear-cart-btn mb-1 text-white'>Clear Cart</button>
-                    <button className='review-btn text-white'>Review Order</button>
+                    <button onClick={clearCart} className='clear-cart-btn mb-1 text-white'>Clear Cart</button>
+                    <button onClick={()=>navigate('/orderReview')} className='review-btn text-white'>Review Order</button>
                 </div>
             </div>
         </div>

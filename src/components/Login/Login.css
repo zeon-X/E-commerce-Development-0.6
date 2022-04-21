@@ -1,0 +1,9 @@
+.login-container{
+    height: 90vh;
+}
+.login-form-container{
+    border: 1px solid #95a0a76b;
+    border-radius: 8px;
+    box-shadow: -8px -8px 0px #FFE0B3;
+    padding: 27px;
+}
