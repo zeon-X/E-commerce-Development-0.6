@@ -1,0 +1,48 @@
+/* .product-container{
+    width : 80%;
+} */
+
+
+
+
+
+/* ORDER SUMMERY  */
+
+.order-summery-container{
+    position: sticky;
+    top: 80px;
+
+    /* width: 20%; */
+    height: 100vh;
+    background-color: rgba(255, 153, 0, 0.3);
+}
+
+p{
+    font-size: 25px;
+}
+hr{
+    border: dashed  1px rgba(0, 0, 0, 0.761);
+    width: 100%;
+}
+
+.Payment p{
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.Payment h3{
+    font-size: 21px;
+}
+
+.clear-cart-btn{
+    width: 100%;
+    background-color: #FF3030;
+    padding: 8px 10px;
+    font-size: 16px;
+}
+.review-btn{
+    width: 100%;
+    background-color: #FF9900;
+    padding: 8px 20px;
+    font-size: 16px;
+}

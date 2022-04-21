@@ -1,0 +1,41 @@
+.home-container {
+    background-color: white;
+}
+
+.text-container {
+    width: 50%;
+}
+
+.offer-text {
+    color: #FF9900;
+    font-size: 16px;
+}
+
+.text-container div h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.home-slogan{
+    font-size: 17px;
+}
+
+.shop-now-btn {
+    background-color: #FF9900;
+    color: #0E161A;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+.photo-container {
+    width: 50%;
+    display: flex;
+    padding-left: 70px;
+    /* justify-content: center; */
+
+}
+
+.photo-container img {
+    height: 470px;
+    border-radius: 10px;
+    box-shadow: -15px -15px 0px #FFE0B3;
+}

@@ -1,0 +1,19 @@
+.header{
+    height: 80px;
+    background-color: #1C2B35;
+    color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+ul a{
+    margin-left: 20px;
+}
+
+ul a:hover{
+    color: #d78305;
+}
+.logo-img{
+    width:14%;
+}
